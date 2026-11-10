@@ -83,7 +83,7 @@ $pageTitle = "Khaila Sukmawati | Khaila Portfolio";
                     <div class="profile-placeholder">
 
                         <img
-                            src="assets/images/profile/foto-profile.jpg"
+                            src="assets/images/profile/foto.jpg"
                             alt="Khaila Sukmawati">
 
                     </div>
