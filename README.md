@@ -1,4 +1,4 @@
-# Khaila Sukmawati | Personal Portfolio
+# Khaila Sukmawati | Khaila Portfolio
 
 Welcome to my personal portfolio repository!
 
