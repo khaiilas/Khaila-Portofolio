@@ -99,36 +99,6 @@ img {
     font-size: 13px;
 }
 
-
-/* LANGUAGE SWITCHER */
-.language-switch {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-left: 20px;
-    font-size: 12px;
-}
-
-.lang-btn {
-    border: none;
-    background: transparent;
-    color: var(--gray);
-    font-family: inherit;
-    font-size: 12px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.lang-btn:hover,
-.lang-btn.active {
-    color: var(--burgundy);
-}
-
-.language-switch span {
-    color: var(--rose);
-}
-
 /* =========================
    HERO / INTRODUCTION
 ========================= */
@@ -327,7 +297,7 @@ img {
 
     .hero {
         grid-template-columns: 1fr;
-        text-align: center;
+        text-align: left;
         padding: 55px 25px;
         gap: 50px;
     }
@@ -338,7 +308,7 @@ img {
     }
 
     .hero-buttons {
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .profile-card {
@@ -349,6 +319,19 @@ img {
     .footer-container {
         flex-direction: column;
         text-align: center;
+    }
+
+    .hero-label,
+    .hero h1,
+    .hero h2,
+    .hero-description,
+    .intro-description {
+        text-align: left;
+    }
+
+    .hero-description {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
