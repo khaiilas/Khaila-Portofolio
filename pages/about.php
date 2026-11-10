@@ -19,29 +19,34 @@
         <!-- KNOWLEDGE DEVELOPMENT -->
 
         <div class="skills-column">
-
-            <h3>Knowledge Development</h3>
+            <h3>01 - Core Competencies</h3>
 
             <div class="knowledge-list">
 
                 <div class="knowledge-item">
-                    <span>01</span>
                     <h4>System Analysis</h4>
+                    <p> System Modeling · Use Case · UML · Functional Requirements </p>
                 </div>
 
                 <div class="knowledge-item">
-                    <span>02</span>
-                    <h4>UI / UX Design</h4>
+                    <h4>Business Analysis</h4>
+                    <p>
+                        Requirement Gathering · Business Process Analysis · User Needs Analysis
+                    </p>
                 </div>
 
                 <div class="knowledge-item">
-                    <span>03</span>
-                    <h4>Software Documentation</h4>
+                    <h4>Documentation</h4>
+                    <p>
+                        SRS · SDD · Requirement Documentation
+                    </p>
                 </div>
 
                 <div class="knowledge-item">
-                    <span>04</span>
-                    <h4>Database Management</h4>
+                    <h4>Database & Database</h4>
+                    <p>
+                        SQL · Database Design · Data Analysis
+                    </p>
                 </div>
 
             </div>
@@ -52,28 +57,26 @@
 
         <div class="skills-column">
 
-            <h3>Software</h3>
+            <h3>02 — Tools & Technologies</h3>
 
             <div class="software-list">
-
                 <div class="software-item">
-                    <div class="software-icon">MS</div>
                     <p>Microsoft Office</p>
                 </div>
-
                 <div class="software-item">
-                    <div class="software-icon">UI</div>
-                    <p>UI / UX & Design</p>
+                    <p>Draw.io</p>
                 </div>
-
                 <div class="software-item">
-                    <div class="software-icon">PHP</div>
-                    <p>Web Development</p>
+                    <p>Figma</p>
                 </div>
-
                 <div class="software-item">
-                    <div class="software-icon">DB</div>
-                    <p>Database Tools</p>
+                    <p>MySQL</p>
+                </div>
+                <div class="software-item">
+                    <p>Laravel</p>
+                </div>
+                <div class="software-item">
+                    <p>PHP</p>
                 </div>
 
             </div>

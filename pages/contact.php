@@ -5,7 +5,7 @@
 
         <div class="contact-heading">
             <p class="section-label">GET IN TOUCH</p>
-            <h2>Let's Connect & Collaborate</h2>
+            <h2>Let's Connect <span> & Collaborate</span></h2>
             <p>
                 I'm open to opportunities in System Analysis,
                 Business Analysis, and IT & Digital Transformation.

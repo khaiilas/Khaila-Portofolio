@@ -1,11 +1,11 @@
 <section class="certifications-section" id="certifications">
 
     <div class="section-heading">
-        <p class="section-label">PROFESSIONAL DEVELOPMENT</p>
-        <h2>Certifications <span> & Workshops </span></h2>
+        <p class="section-label">MY QUALIFICATIONS</p>
+        <h2>Certifications <span> & Credentials </span></h2>
         <p class="section-description">
-            Certifications and learning experiences that support
-            my knowledge in information systems and technology.
+            A collection of certifications and training programs reflecting my knowledge 
+            and competencies in Information Systems, Software Development, and System Analysis.
         </p>
     </div>
 
@@ -22,7 +22,8 @@
                 <h3>Fundamental Web Programming</h3>
                 <h4>Universitas Gunadarma</h4>
                 <p>Learned core web development concepts including HTML, CSS, and basic programming logic.</p>
-                <a href="assets/images/certification/web-programing.pdf" target="_blank" rel="noopener noreferrer" class="certificate-link">View Certificate ↗</a>
+                <a href="assets/images/certification/web-programing.pdf" target="_blank" rel="noopener noreferrer" 
+                    class="certificate-link">View Certificate ↗</a>
             </div>
         </article>
 

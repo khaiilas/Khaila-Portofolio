@@ -412,8 +412,8 @@ img {
 
 .skills-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 55px;
+    grid-template-columns: 1fr;
+    gap: 40px;
 }
 
 .skills-column h3 {
@@ -424,69 +424,70 @@ img {
 }
 
 .knowledge-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
 }
 
 .knowledge-item {
     background: var(--off-white);
     padding: 18px 22px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    align-items: start;
+    column-gap: 15px;
     border-left: 3px solid var(--burgundy);
     transition: .3s;
 }
 
 .knowledge-item:hover {
-    transform: translateX(5px);
+    border-color: var(--burgundy);
+    transform: translateY(-4px);
 }
 
 .knowledge-item span {
-    font-family: 'Playfair Display', serif;
-    color: var(--burgundy);
-    font-size: 17px;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .knowledge-item h4 {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+}
+
+.knowledge-item p {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 8px 0 0;
     font-size: 14px;
-    font-weight: 500;
+    line-height: 1.7;
+    color: var(--gray);
 }
 
 .software-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .software-item {
     background: var(--off-white);
-    min-height: 120px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+    padding: 10px 22px;
+    min-height: auto;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    gap: 12px;
     border: 1px solid #e5d5d5;
+    border-radius: 50px;
     transition: .3s;
 }
 
 .software-item:hover {
     border-color: var(--burgundy);
     transform: translateY(-4px);
-}
-
-.software-icon {
-    width: 35px;
-    height: 35px;
-    background: var(--burgundy);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 11px;
-    font-weight: 700;
 }
 
 .software-item p {
@@ -500,6 +501,9 @@ img {
 ========================= */
 
 @media (max-width: 768px) {
+    .knowledge-list {
+        grid-template-columns: 1fr;
+    }
 
     .intro-content {
         grid-template-columns: 1fr;
@@ -752,6 +756,14 @@ img {
     background: var(--pink);
 }
 
+.section-heading h2 {
+    color: var(--burgundy);
+}
+
+.section-heading h2 span {
+    color: var(--dark);
+}
+
 .certifications-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -829,7 +841,6 @@ img {
     }
 }
 
-
 /* Ukuran gambar sertifikat */
 .certificate-image {
     width: 200px;
@@ -845,7 +856,6 @@ img {
     border: 1px solid #e8dddd;
     border-radius: 4px;
 }
-
 
 /* COMPACT CERTIFICATION DESIGN */
 
@@ -962,6 +972,7 @@ img {
     background: var(--off white);
 }
 
+
 .contact-container {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -972,8 +983,12 @@ img {
 .contact-heading h2 {
     font-family: 'Playfair Display', serif;
     font-size: 40px;
-    color: var(--dark);
+    color: var(--burgundy);
     margin-bottom: 20px;
+}
+
+.contact-heading h2 span {
+    color: var(--dark);
 }
 
 .contact-heading > p:not(.section-label) {
@@ -1039,4 +1054,3 @@ img {
         font-size: 32px;
     }
 }
-
