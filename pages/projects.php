@@ -1,4 +1,3 @@
-
 <section class="projects-section" id="projects">
     <div class="section-heading">
         <p class="section-label">MY WORK</p>
@@ -35,12 +34,12 @@
         </div>
 
             <div class="project-content">
-                <p class="project-category">Web Application</p>
+                <p class="project-category">Web Application | Business Process Analysis</p>
                 <h3>Inventory Management System</h3>
                 <p>
-                    A web-based application designed to manage product
-                    inventory, monitor stock movements, and organize
-                    incoming and outgoing goods.
+                    A web-based inventory management system designed to streamline stock management, 
+                    track incoming and outgoing goods, monitor product availability, and generate 
+                    inventory reports.
                 </p>
 
                 <div class="project-tags">
@@ -49,10 +48,17 @@
                     <span>Bootstrap</span>
                 </div>
 
-                <a href="https://github.com/khaiilas/Inventory-Management-System"
-                   class="project-link">
-                    View Project <span>↗</span>
+                <div>
+                <a href="https://github.com/khaiilas/Inventory-Management-System" class="project-link">
+                    <span>View Project</span>
+                    <i class="fa fa-external-link" aria-hidden="true"></i>
                 </a>
+                <a href="pages/project-detail.php?project=inventory"
+                    class="project-link">
+                    <span>Detail Project</span>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </a>
+                </div>
             </div>
         </article>
 
@@ -83,7 +89,7 @@
         </div>
 
             <div class="project-content">
-                <p class="project-category">System Analysis</p>
+                <p class="project-category">System Analysis | System Document</p>
                 <h3>Software Requirement & System Design</h3>
                 <p>
                     A software documentation project covering
@@ -95,6 +101,14 @@
                     <span>SRS</span>
                     <span>UML</span>
                     <span>UI/UX</span>
+                </div>
+
+                <div>
+                <a href="pages/project-detail.php?project=system-design"
+                    class="project-link">
+                    <span>Detail Project</span>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </a>
                 </div>
             </div>
         </article>
@@ -137,10 +151,19 @@
                     <span>SES</span>
                 </div>
 
-                <a href="https://github.com/khaiilas/pos-stock-forecasting"
-                   class="project-link">
-                    View Project <span>↗</span>
-                </a>
+                <div class="project-links">
+                    <a href="https://github.com/khaiilas/pos-stock-forecasting"
+                    class="project-link">
+                        <span>View Project</span>
+                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="pages/project-detail.php?project=pos-forecasting"
+                    class="project-link">
+                        <span>Detail Project</span>
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
         </article>
 

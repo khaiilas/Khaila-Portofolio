@@ -14,7 +14,8 @@ $pageTitle = "Khaila Sukmawati | Khaila Portfolio";
 
     <title><?= $pageTitle; ?></title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -66,10 +67,9 @@ $pageTitle = "Khaila Sukmawati | Khaila Portfolio";
                         Explore My Work
                     </a>
 
-                    <a href="assets/file/CV-KHAILA-SUKMAWATI.pdf"
-                        class="btn btn-outline"
-                        download>
-                        CV <span>↓</span>
+                    <a href="assets/file/CV-KHAILA-SUKMAWATI.pdf" class="btn btn-outline"download>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        CV
                     </a>
 
                 </div>
@@ -77,19 +77,13 @@ $pageTitle = "Khaila Sukmawati | Khaila Portfolio";
 
             <!-- PROFILE IMAGE -->
             <div class="hero-visual">
-
                 <div class="profile-card">
-
                     <div class="profile-placeholder">
-
                         <img
-                            src="assets/images/profile/foto.jpg"
+                            src="assets/images/profile/profile.png"
                             alt="Khaila Sukmawati">
-
                     </div>
-
                 </div>
-
             </div>
 
         </section>

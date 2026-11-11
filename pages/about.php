@@ -3,15 +3,11 @@
 ========================= -->
 
 <section class="skills-section section" id="skills">
-
     <div class="skills-heading">
-
         <p class="section-label">MY EXPERTISE</p>
-
         <h2>
             Skills & <span>Knowledge.</span>
         </h2>
-
     </div>
 
     <div class="skills-container">
@@ -19,16 +15,18 @@
         <!-- KNOWLEDGE DEVELOPMENT -->
 
         <div class="skills-column">
-            <h3>01 - Core Competencies</h3>
+            <h3>01 — Core Competencies</h3>
 
             <div class="knowledge-list">
 
                 <div class="knowledge-item">
+                    <i class="fa fa-sitemap icon" aria-hidden="true"></i>
                     <h4>System Analysis</h4>
                     <p> System Modeling · Use Case · UML · Functional Requirements </p>
                 </div>
 
                 <div class="knowledge-item">
+                    <i class="fa fa-search icon" aria-hidden="true"></i>
                     <h4>Business Analysis</h4>
                     <p>
                         Requirement Gathering · Business Process Analysis · User Needs Analysis
@@ -36,6 +34,7 @@
                 </div>
 
                 <div class="knowledge-item">
+                    <i class="fa fa-file-text icon" aria-hidden="true"></i>
                     <h4>Documentation</h4>
                     <p>
                         SRS · SDD · Requirement Documentation
@@ -43,6 +42,7 @@
                 </div>
 
                 <div class="knowledge-item">
+                    <i class="fa fa-database icon" aria-hidden="true"></i>
                     <h4>Database & Database</h4>
                     <p>
                         SQL · Database Design · Data Analysis
