@@ -260,11 +260,11 @@
                     <span>View Project</span>
                     <i class="fa fa-external-link" aria-hidden="true"></i>
                 </a>
-                <a href="pages/project-detail.php?project=inventory"
-                    class="project-link">
+                <button type="button" class="project-link"
+                    onclick="openProjectDetail('inventory')">
                     <span>Detail Project</span>
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                </a>
+                    <i class="fa fa-arrow-right"></i>
+                </button>
                 </div>
             </div>
         </article>
@@ -311,11 +311,11 @@
                 </div>
 
                 <div>
-                <a href="pages/project-detail.php?project=system-design"
-                    class="project-link">
+                <button type="button" class="project-link"
+                    onclick="openProjectDetail('system-design')">
                     <span>Detail Project</span>
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                </a>
+                    <i class="fa fa-arrow-right"></i>
+                </button>
                 </div>
             </div>
         </article>
@@ -365,16 +365,31 @@
                         <i class="fa fa-external-link" aria-hidden="true"></i>
                     </a>
 
-                    <a href="pages/project-detail.php?project=pos-forecasting"
-                    class="project-link">
+                    <button type="button" class="project-link"
+                        onclick="openProjectDetail('pos-forecasting')">
                         <span>Detail Project</span>
-                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                    </a>
+                        <i class="fa fa-arrow-right"></i>
+                    </button>
                 </div>
             </div>
         </article>
 
     </div>
+
+<!-- PROJECT DETAIL MODAL -->
+<div class="project-modal" id="projectModal">
+    <div class="project-modal-overlay"
+         onclick="closeProjectDetail()"></div>
+    <div class="project-modal-content">
+        <button class="modal-close"
+                onclick="closeProjectDetail()"
+                aria-label="Close">
+            &times;
+        </button>
+        <div id="modalProjectContent"></div>
+    </div>
+</div>
+
 </section>
 
         <!-- CERTIFICATIONS -->

@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 $projects = [
     'inventory' => [
@@ -211,4 +211,4 @@ if (!isset($projects[$projectKey])) {
 <?php else: ?>
     <h1>404 - Project Not Found</h1>
     <a href="../index.php#projects">Back to Portfolio</a>
-<?php endif; ?>
+<?php endif; ?> -->
