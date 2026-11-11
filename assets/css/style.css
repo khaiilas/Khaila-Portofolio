@@ -435,7 +435,7 @@ CONTACT STRIP
     display: grid;
     grid-template-columns: 22px 1fr;
     align-items: start;
-    column-gap: 10px;
+    column-gap: 25px;
     border-left: 3px solid var(--burgundy);
     transition: .3s ease;
 }
@@ -1140,6 +1140,17 @@ CONTACT STRIP
     font-size: clamp(26px, 4vw, 36px);
     color: var(--burgundy);
     margin-bottom: 12px;
+}
+
+.modal-year {
+    color: var(--burgundy);
+    font-size: 12px;
+    display: inline-block;
+    border: 1px solid var(--burgundy);
+    color: var(--burgundy);
+    padding: 7px 14px;
+    border-radius: 30px;
+    font-weight: 600;
 }
 
 .modal-description {

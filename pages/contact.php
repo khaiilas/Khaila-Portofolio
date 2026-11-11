@@ -21,16 +21,20 @@
         <div class="contact-details">
 
             <div class="contact-item">
-                <div class="contact-icon">☏</div>
+                <div class="contact-icon">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                </div>
                 <div>
                     <span>Telephone</span>
-                    <a href="mailto:khaila.sukma53@gmail.com">
+                    <a href="tel:+6281234567890">
                         +62 812-1226-3876
                     </a>
                 </div>
             </div>
             <div class="contact-item">
-                <div class="contact-icon">✉</div>
+                <div class="contact-icon">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
                 <div>
                     <span>Email</span>
                     <a href="mailto:khaila.sukma53@gmail.com">
@@ -40,7 +44,9 @@
             </div>
 
             <div class="contact-item">
-                <div class="contact-icon">in</div>
+                <div class="contact-icon">
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                </div>
                 <div>
                     <span>LinkedIn</span>
                     <a href="https://www.linkedin.com/in/khaila-sukmawati/"
@@ -52,12 +58,14 @@
             </div>
 
             <div class="contact-item">
-                <div class="contact-icon">GH</div>
+                <div class="contact-icon">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </div>
                 <div>
                     <span>GitHub</span>
                     <a href="https://github.com/khaiilas"
-                       target="_blank"
-                       rel="noopener noreferrer">
+                    target="_blank"
+                    rel="noopener noreferrer">
                         github.com/khaiilas
                     </a>
                 </div>

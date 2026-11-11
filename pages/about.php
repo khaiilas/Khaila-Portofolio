@@ -43,7 +43,7 @@
 
                 <div class="knowledge-item">
                     <i class="fa fa-database icon" aria-hidden="true"></i>
-                    <h4>Database & Database</h4>
+                    <h4>Data & Database</h4>
                     <p>
                         SQL · Database Design · Data Analysis
                     </p>

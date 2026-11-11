@@ -125,10 +125,8 @@
                 <img src="assets/images/project/pos-3.png"
                     alt="Data Kategori">
             </div>
-
             <button class="slide-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
             <button class="slide-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
-
             <div class="slide-indicators">
                 <span class="active" onclick="goToSlide(this, 0)"></span>
                 <span onclick="goToSlide(this, 1)"></span>

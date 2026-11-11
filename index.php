@@ -14,7 +14,7 @@ $pageTitle = "Khaila Sukmawati | Khaila Portfolio";
 
     <title><?= $pageTitle; ?></title>
 
-    <link rel="stylesheet" href="assets/css/style.css?v=3">
+    <link rel="stylesheet" href="assets/css/style.css?v=4">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
@@ -115,7 +115,7 @@ $pageTitle = "Khaila Sukmawati | Khaila Portfolio";
     <!-- FOOTER -->
     <?php include 'includes/footer.php'; ?>
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js?v=2"></script>
     <script src="assets/js/language.js"></script>
 
 </body>

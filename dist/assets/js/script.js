@@ -79,7 +79,7 @@ const projectDetails = {
     "system-design": {
         title: "Software Requirements & System Design",
         category: "System Analysis & Documentation",
-        year: "2025",
+        year: "2026",
 
         description: "A software analysis and design project focused on identifying system requirements and preparing technical documentation as a foundation for software development.",
 
@@ -165,7 +165,7 @@ function openProjectDetail(projectKey) {
             ${project.description}
         </p>
 
-        <p class="modal-description">
+        <p class="modal-year">
             Project Year: ${project.year}
         </p>
 
