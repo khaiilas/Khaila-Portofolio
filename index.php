@@ -67,8 +67,8 @@ $pageTitle = "Khaila Sukmawati | Khaila Portfolio";
                         Explore My Work
                     </a>
 
-                    <a href="assets/file/CV.pdf" class="btn btn-outline" 
-                        download="CV_Khaila_Sukmawati.pdf">
+                    <a href="assets/file/CV-KHAILA-SUKMAWATI.pdf" class="btn btn-outline" 
+                        download="CV-Khaila-Sukmawati.pdf">
                         <i class="fa fa-download" aria-hidden="true"></i>
                         CV
                     </a>
