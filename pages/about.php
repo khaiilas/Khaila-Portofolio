@@ -1,4 +1,50 @@
 <!-- =========================
+    ABOUT ME
+========================= -->
+
+
+<section class="introduction" id="about">
+
+    <div class="intro-heading">
+        <h2>About <span>Me.</span></h2>
+        <div class="intro-role">
+            BNSP Certified System Analyst
+        </div>
+    </div>
+
+    <div class="intro-content">
+
+        <div class="intro-description">
+            <p>
+                Hi, I’m Khaila, an Information Systems graduate from Universitas Gunadarma (GPA 3.79/4.00) 
+                and a BNSP-certified System Analyst. I’m most interested in the work that happens before 
+                any code is written: understanding how a business really operates, finding where the actual 
+                problems are, and turning them into clear requirements.
+            </p>
+            <p>
+                In my projects, I’ve modeled business processes with UML and BPMN, written SRS and SDD 
+                documents, designed databases, and validated systems through Black Box Testing and UAT. 
+                My thesis was a web-based POS and stock forecasting system built with Laravel and MySQL, 
+                using Single Exponential Smoothing to predict demand.
+            </p>
+            <p>
+                I'm always eager to learn, strengthen my analytical and problem-solving skills, and 
+                explore how technology can help businesses work more effectively.
+            </p>
+        </div>
+
+        <!-- <div class="intro-education">
+            <span>Education</span>
+            <h3>Information Systems</h3>
+            <p>Universitas Gunadarma</p>
+            <p>Graduate · 2026</p>
+        </div> -->
+
+    </div>
+</section>
+
+
+<!-- =========================
      SKILLS
 ========================= -->
 

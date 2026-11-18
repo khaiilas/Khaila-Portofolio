@@ -26,7 +26,7 @@ $pageTitle = "Khaila Sukmawati | Khaila Portfolio";
     <main>
 
         <!-- HERO SECTION -->
-        <section class="hero" id="about">
+        <section class="hero" id="home">
 
             <div class="hero-content">
                 <p class="intro-role">
@@ -68,13 +68,13 @@ $pageTitle = "Khaila Sukmawati | Khaila Portfolio";
 
         </section>
 
-        <!-- INTRODUCTION STRIP -->
+        <!-- INTRODUCTION STRIP
         <section class="intro-strip">
             <p>
                 Interested in creating meaningful solutions
                 through technology, analysis, and innovation.
             </p>
-        </section>
+        </section> -->
 
         <!-- ABOUT AND SKILLS -->
         <?php include 'pages/about.php'; ?>
