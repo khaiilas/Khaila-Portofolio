@@ -247,3 +247,47 @@ document.addEventListener("keydown", function(event) {
     }
 
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    const themeToggle = document.getElementById('themeToggle');
+
+    if (!themeToggle) return;
+
+    const themeIcon = themeToggle.querySelector('i');
+
+    const savedTheme = localStorage.getItem('theme') || 'light';
+
+    function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+
+        localStorage.setItem('theme', theme);
+
+        if (themeIcon) {
+            themeIcon.className = theme === 'dark'
+                ? 'fas fa-sun'
+                : 'fas fa-moon';
+        }
+    }
+
+    setTheme(savedTheme);
+
+    themeToggle.addEventListener('click', function () {
+
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+
+        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+
+    });
+
+});
+
+window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+
+    if (window.scrollY > 10) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});

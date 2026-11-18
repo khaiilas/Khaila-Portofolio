@@ -14,7 +14,7 @@ $pageTitle = "Khaila Sukmawati | Khaila Portfolio";
 
     <title><?= $pageTitle; ?></title>
 
-    <link rel="stylesheet" href="assets/css/style.css?v=4">
+    <link rel="stylesheet" href="assets/css/style.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
@@ -29,50 +29,29 @@ $pageTitle = "Khaila Sukmawati | Khaila Portfolio";
         <section class="hero" id="about">
 
             <div class="hero-content">
-
-                <p class="hero-label">
-                    WELCOME TO MY PORTFOLIO
+                <p class="intro-role">
+                    <span class="status-dot"></span>
+                    Open to Work · System Analyst | Business Analyst
                 </p>
-
                 <h1>
                     Hello, I'm
                     <span>Khaila Sukmawati.</span>
                 </h1>
-                <p class="intro-role">
-                    System Analyst | Business Analyst
-                </p>
-
                 <div class="intro-description">
-            <p>
-                I am an Information Systems graduate from
-                Gunadarma University with an interest in
-                UI/UX Design, System Analysis, and
-                Business Analysis.
-            
-                I enjoy transforming user needs into structured,
-                functional, and user-friendly digital solutions.
-                Through academic projects and software development
-                experiences, I have developed knowledge in system
-                analysis, database management, UI/UX design,
-                software documentation, and web application development.
-            
-                I am eager to continuously learn, improve my skills,
-                and contribute to meaningful technology-driven projects.
-            </p>
-        </div>
-
+                    <p>
+                        Undergraduate Student, <span>Bachelor of Information Systems, 
+                        Gunadarma University</span> (2022-2026)
+                    </p>
+                </div>
                 <div class="hero-buttons">
-
                     <a href="#projects" class="btn btn-primary">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
                         Explore My Work
                     </a>
-
-                    <a href="assets/file/CV-KHAILA-SUKMAWATI.pdf" class="btn btn-outline" 
-                        download="CV-Khaila-Sukmawati.pdf">
-                        <i class="fa fa-download" aria-hidden="true"></i>
-                        CV
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Contact Me</span>
                     </a>
-
                 </div>
             </div>
 
@@ -91,12 +70,10 @@ $pageTitle = "Khaila Sukmawati | Khaila Portfolio";
 
         <!-- INTRODUCTION STRIP -->
         <section class="intro-strip">
-
             <p>
                 Interested in creating meaningful solutions
                 through technology, analysis, and innovation.
             </p>
-
         </section>
 
         <!-- ABOUT AND SKILLS -->
@@ -115,9 +92,44 @@ $pageTitle = "Khaila Sukmawati | Khaila Portfolio";
 
     <!-- FOOTER -->
     <?php include 'includes/footer.php'; ?>
+        <script src="assets/js/script.js?v=3"></script>
+        <script src="assets/js/language.js"></script>
+        <script>
+            const menuToggle = document.getElementById('menuToggle');
+            const navMenu = document.getElementById('navMenu');
 
-    <script src="assets/js/script.js?v=2"></script>
-    <script src="assets/js/language.js"></script>
+            // Buka dan tutup hamburger menu
+            menuToggle.addEventListener('click', () => {
+                const isOpen = navMenu.classList.toggle('active');
 
+                menuToggle.setAttribute('aria-expanded', isOpen);
+                menuToggle.setAttribute(
+                    'aria-label',
+                    isOpen ? 'Close navigation menu' : 'Open navigation menu'
+                );
+            });
+
+            // Tutup menu ketika link diklik
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                    menuToggle.setAttribute('aria-label', 'Open navigation menu');
+                });
+            });
+
+            // Tutup menu ketika area di luar navbar diklik
+            document.addEventListener('click', (event) => {
+                if (
+                    !navMenu.contains(event.target) &&
+                    !menuToggle.contains(event.target)
+                ) {
+                    navMenu.classList.remove('active');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                    menuToggle.setAttribute('aria-label', 'Open navigation menu');
+                }
+            });
+        </script>
 </body>
 </html>

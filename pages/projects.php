@@ -49,15 +49,11 @@
                 </div>
 
                 <div>
-                <a href="https://github.com/khaiilas/Inventory-Management-System" class="project-link">
-                    <span>View Project</span>
-                    <i class="fa fa-external-link" aria-hidden="true"></i>
-                </a>
-                <button type="button" class="project-link"
-                    onclick="openProjectDetail('inventory')">
-                    <span>Detail Project</span>
-                    <i class="fa fa-arrow-right"></i>
-                </button>
+                    <button type="button" class="project-link"
+                        onclick="openProjectDetail('inventory')">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <span>Detail Project</span>
+                    </button>
                 </div>
             </div>
         </article>
@@ -106,8 +102,8 @@
                 <div>
                 <button type="button" class="project-link"
                     onclick="openProjectDetail('system-design')">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
                     <span>Detail Project</span>
-                    <i class="fa fa-arrow-right"></i>
                 </button>
                 </div>
             </div>
@@ -150,16 +146,10 @@
                 </div>
 
                 <div class="project-links">
-                    <a href="https://github.com/khaiilas/pos-stock-forecasting"
-                    class="project-link">
-                        <span>View Project</span>
-                        <i class="fa fa-external-link" aria-hidden="true"></i>
-                    </a>
-
                     <button type="button" class="project-link"
                         onclick="openProjectDetail('pos-forecasting')">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
                         <span>Detail Project</span>
-                        <i class="fa fa-arrow-right"></i>
                     </button>
                 </div>
             </div>

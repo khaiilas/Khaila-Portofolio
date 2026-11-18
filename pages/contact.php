@@ -12,10 +12,13 @@
                 or collaboration.
             </p>
 
-            <a href="mailto:khaila.sukma53@gmail.com"
-               class="btn btn-primary">
-                Contact Me ↗
-            </a>
+            <div class="location-info">
+                <span class="location-label">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    Domicile / Location
+                </span>
+                <span class="location-value">Depok, West Java</span>
+            </div>
         </div>
 
         <div class="contact-details">

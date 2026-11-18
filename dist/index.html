@@ -11,7 +11,7 @@
 
     <title>Khaila Sukmawati | Khaila Portfolio</title>
 
-    <link rel="stylesheet" href="assets/css/style.css?v=4">
+    <link rel="stylesheet" href="assets/css/style.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
@@ -21,22 +21,49 @@
     
 <header class="navbar">
     <div class="nav-container">
+
         <a href="index.php" class="logo">
-            KS<span>.</span>
+            khaila<span>sukmawati</span>
         </a>
 
-        <nav class="nav-menu">
+        <button class="menu-toggle" id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#certifications">Certifications</a>
             <a href="#contact">Contact</a>
+
+            <a href="assets/file/CV-KHAILA-SUKMAWATI.pdf"
+                class="btn btn-outline mobile-cv"
+                download="CV-Khaila-Sukmawati.pdf">
+                <i class="fa fa-download" aria-hidden="true"></i>
+                Download CV
+            </a>
         </nav>
-        <!-- <button type="button" class="lang-btn active" data-lang="en">EN</button>
-            <span>|</span>
-        <button type="button" class="lang-btn" data-lang="id">ID</button>
-    </div> -->
-    
+
+        <div class="nav-actions">
+            <a href="assets/file/CV-KHAILA-SUKMAWATI.pdf"
+                class="btn btn-outline desktop-cv"
+                download="CV-Khaila-Sukmawati.pdf">
+                <i class="fa fa-download" aria-hidden="true"></i>
+                Download CV
+            </a>
+
+            <button type="button" class="theme-toggle"
+                id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+
+    </div>
 </header>
 
     <main>
@@ -45,50 +72,29 @@
         <section class="hero" id="about">
 
             <div class="hero-content">
-
-                <p class="hero-label">
-                    WELCOME TO MY PORTFOLIO
+                <p class="intro-role">
+                    <span class="status-dot"></span>
+                    Open to Work · System Analyst | Business Analyst
                 </p>
-
                 <h1>
                     Hello, I'm
                     <span>Khaila Sukmawati.</span>
                 </h1>
-                <p class="intro-role">
-                    System Analyst | Business Analyst
-                </p>
-
                 <div class="intro-description">
-            <p>
-                I am an Information Systems graduate from
-                Gunadarma University with an interest in
-                UI/UX Design, System Analysis, and
-                Business Analysis.
-            
-                I enjoy transforming user needs into structured,
-                functional, and user-friendly digital solutions.
-                Through academic projects and software development
-                experiences, I have developed knowledge in system
-                analysis, database management, UI/UX design,
-                software documentation, and web application development.
-            
-                I am eager to continuously learn, improve my skills,
-                and contribute to meaningful technology-driven projects.
-            </p>
-        </div>
-
+                    <p>
+                        Undergraduate Student, <span>Bachelor of Information Systems, 
+                        Gunadarma University</span> (2022-2026)
+                    </p>
+                </div>
                 <div class="hero-buttons">
-
                     <a href="#projects" class="btn btn-primary">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
                         Explore My Work
                     </a>
-
-                    <a href="assets/file/CV-KHAILA-SUKMAWATI.pdf" class="btn btn-outline" 
-                        download="CV-Khaila-Sukmawati.pdf">
-                        <i class="fa fa-download" aria-hidden="true"></i>
-                        CV
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Contact Me</span>
                     </a>
-
                 </div>
             </div>
 
@@ -107,12 +113,10 @@
 
         <!-- INTRODUCTION STRIP -->
         <section class="intro-strip">
-
             <p>
                 Interested in creating meaningful solutions
                 through technology, analysis, and innovation.
             </p>
-
         </section>
 
         <!-- ABOUT AND SKILLS -->
@@ -257,15 +261,11 @@
                 </div>
 
                 <div>
-                <a href="https://github.com/khaiilas/Inventory-Management-System" class="project-link">
-                    <span>View Project</span>
-                    <i class="fa fa-external-link" aria-hidden="true"></i>
-                </a>
-                <button type="button" class="project-link"
-                    onclick="openProjectDetail('inventory')">
-                    <span>Detail Project</span>
-                    <i class="fa fa-arrow-right"></i>
-                </button>
+                    <button type="button" class="project-link"
+                        onclick="openProjectDetail('inventory')">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <span>Detail Project</span>
+                    </button>
                 </div>
             </div>
         </article>
@@ -314,8 +314,8 @@
                 <div>
                 <button type="button" class="project-link"
                     onclick="openProjectDetail('system-design')">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
                     <span>Detail Project</span>
-                    <i class="fa fa-arrow-right"></i>
                 </button>
                 </div>
             </div>
@@ -358,16 +358,10 @@
                 </div>
 
                 <div class="project-links">
-                    <a href="https://github.com/khaiilas/pos-stock-forecasting"
-                    class="project-link">
-                        <span>View Project</span>
-                        <i class="fa fa-external-link" aria-hidden="true"></i>
-                    </a>
-
                     <button type="button" class="project-link"
                         onclick="openProjectDetail('pos-forecasting')">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
                         <span>Detail Project</span>
-                        <i class="fa fa-arrow-right"></i>
                     </button>
                 </div>
             </div>
@@ -513,10 +507,13 @@
                 or collaboration.
             </p>
 
-            <a href="mailto:khaila.sukma53@gmail.com"
-               class="btn btn-primary">
-                Contact Me ↗
-            </a>
+            <div class="location-info">
+                <span class="location-label">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    Domicile / Location
+                </span>
+                <span class="location-value">Depok, West Java</span>
+            </div>
         </div>
 
         <div class="contact-details">
@@ -585,9 +582,44 @@
         <p>© 2026 Khaila Sukmawati.</p>
     </div>
 </footer>
+        <script src="assets/js/script.js?v=3"></script>
+        <script src="assets/js/language.js"></script>
+        <script>
+            const menuToggle = document.getElementById('menuToggle');
+            const navMenu = document.getElementById('navMenu');
 
-    <script src="assets/js/script.js?v=2"></script>
-    <script src="assets/js/language.js"></script>
+            // Buka dan tutup hamburger menu
+            menuToggle.addEventListener('click', () => {
+                const isOpen = navMenu.classList.toggle('active');
 
+                menuToggle.setAttribute('aria-expanded', isOpen);
+                menuToggle.setAttribute(
+                    'aria-label',
+                    isOpen ? 'Close navigation menu' : 'Open navigation menu'
+                );
+            });
+
+            // Tutup menu ketika link diklik
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                    menuToggle.setAttribute('aria-label', 'Open navigation menu');
+                });
+            });
+
+            // Tutup menu ketika area di luar navbar diklik
+            document.addEventListener('click', (event) => {
+                if (
+                    !navMenu.contains(event.target) &&
+                    !menuToggle.contains(event.target)
+                ) {
+                    navMenu.classList.remove('active');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                    menuToggle.setAttribute('aria-label', 'Open navigation menu');
+                }
+            });
+        </script>
 </body>
 </html>
