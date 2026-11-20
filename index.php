@@ -14,7 +14,7 @@ $pageTitle = "Khaila Sukmawati | Khaila Portfolio";
 
     <title><?= $pageTitle; ?></title>
 
-    <link rel="stylesheet" href="assets/css/style.css?v=5">
+    <link rel="stylesheet" href="assets/css/style.css?v=7">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
@@ -31,26 +31,30 @@ $pageTitle = "Khaila Sukmawati | Khaila Portfolio";
             <div class="hero-content">
                 <p class="intro-role">
                     <span class="status-dot"></span>
-                    Open to Work · System Analyst | Business Analyst
+                    <span data-i18n="hero_role">
+                    Open to Work · System Analyst | Business Analyst</span>
                 </p>
                 <h1>
-                    Hello, I'm
+                    <spann data-i18n="hero_hello"> Hello, I'm </spann>
                     <span>Khaila Sukmawati.</span>
                 </h1>
                 <div class="intro-description">
                     <p>
-                        Undergraduate Student, <span>Bachelor of Information Systems, 
-                        Gunadarma University</span> (2022-2026)
+                        <span data-i18n="hero_education">Undergraduate Student,</span>
+                        <span class="highlight" data-i18n="hero_degree">
+                            Bachelor of Information Systems, Gunadarma University
+                        </span>
+                        <span data-i18n="hero_year">(2022-2026)</span>
                     </p>
                 </div>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">
                         <i class="fa fa-briefcase" aria-hidden="true"></i>
-                        Explore My Work
+                        <span data-i18n="hero_button_work">Explore My Work </span>
                     </a>
                     <a href="#contact" class="btn btn-primary">
                         <i class="fa-solid fa-paper-plane"></i>
-                        <span>Contact Me</span>
+                        <span data-i18n="hero_button_contact">Contact Me</span>
                     </a>
                 </div>
             </div>
@@ -92,7 +96,7 @@ $pageTitle = "Khaila Sukmawati | Khaila Portfolio";
 
     <!-- FOOTER -->
     <?php include 'includes/footer.php'; ?>
-        <script src="assets/js/script.js?v=3"></script>
+        <script src="assets/js/script.js?v=5"></script>
         <script src="assets/js/language.js"></script>
         <script>
             const menuToggle = document.getElementById('menuToggle');

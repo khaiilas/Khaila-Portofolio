@@ -41,7 +41,6 @@ function goToSlide(indicator, index) {
 /* =========================
    PROJECT DETAIL DATA
 ========================= */
-
 const projectDetails = {
 
     inventory: {
@@ -145,7 +144,6 @@ const projectDetails = {
 /* =========================
    OPEN PROJECT DETAIL
 ========================= */
-
 function openProjectDetail(projectKey) {
 
     const project = projectDetails[projectKey];
@@ -154,42 +152,64 @@ function openProjectDetail(projectKey) {
 
     const content = document.getElementById("modalProjectContent");
 
+    if (!content) return;
+
     const imagePath = "assets/images/project/";
 
+    // Menyesuaikan prefix dengan key di language.js
+    const translationPrefix = {
+        "inventory": "inventory",
+        "system-design": "system",
+        "pos-forecasting": "pos"
+    }[projectKey];
+
     content.innerHTML = `
-        <p class="modal-category">${project.category}</p>
+        <p class="modal-category"
+           data-i18n="${translationPrefix}_category">
+            ${project.category}
+        </p>
 
-        <h2 class="modal-title">${project.title}</h2>
+        <h2 class="modal-title">
+            ${project.title}
+        </h2>
 
-        <p class="modal-description">
+        <p class="modal-description"
+           data-i18n="${translationPrefix}_description">
             ${project.description}
         </p>
 
         <p class="modal-year">
-            Project Year: ${project.year}
+            <span data-i18n="detail_year">Project Year:</span>
+            ${project.year}
         </p>
 
         <div class="modal-section">
-            <h3>Problem Statement</h3>
-            <p>${project.problem}</p>
+            <h3 data-i18n="detail_problem">Problem Statement</h3>
+            <p data-i18n="${translationPrefix}_problem">
+                ${project.problem}
+            </p>
         </div>
 
         <div class="modal-section">
-            <h3>Project Objectives</h3>
-            <p>${project.objective}</p>
+            <h3 data-i18n="detail_objectives">Project Objectives</h3>
+            <p data-i18n="${translationPrefix}_objective">
+                ${project.objective}
+            </p>
         </div>
 
         <div class="modal-section">
-            <h3>My Contributions</h3>
+            <h3 data-i18n="detail_contributions">My Contributions</h3>
             <ul>
-                ${project.contributions.map(item =>
-                    `<li>${item}</li>`
-                ).join("")}
+                ${project.contributions.map((item, index) => `
+                    <li data-i18n="${translationPrefix}_contribution_${index + 1}">
+                        ${item}
+                    </li>
+                `).join("")}
             </ul>
         </div>
 
         <div class="modal-section">
-            <h3>Project Documentation</h3>
+            <h3 data-i18n="detail_documentation">Project Documentation</h3>
 
             <div class="modal-gallery">
                 ${project.images.map(image => `
@@ -203,12 +223,14 @@ function openProjectDetail(projectKey) {
         </div>
 
         <div class="modal-section">
-            <h3>Results & Outcomes</h3>
-            <p>${project.results}</p>
+            <h3 data-i18n="detail_results">Results & Outcomes</h3>
+            <p data-i18n="${translationPrefix}_results">
+                ${project.results}
+            </p>
         </div>
 
         <div class="modal-section">
-            <h3>Tools & Technologies</h3>
+            <h3 data-i18n="detail_tools">Tools & Technologies</h3>
 
             <div class="modal-tools">
                 ${project.tools.map(tool =>
@@ -217,6 +239,15 @@ function openProjectDetail(projectKey) {
             </div>
         </div>
     `;
+
+    // Ambil bahasa yang sedang aktif
+    const currentLanguage =
+        localStorage.getItem("portfolio-language") || "en";
+
+    // Terjemahkan konten modal yang baru dibuat
+    requestAnimationFrame(() => {
+        setLanguage(currentLanguage);
+    });
 
     const modal = document.getElementById("projectModal");
 
@@ -228,7 +259,6 @@ function openProjectDetail(projectKey) {
 /* =========================
    CLOSE PROJECT DETAIL
 ========================= */
-
 function closeProjectDetail() {
 
     document.getElementById("projectModal")
@@ -291,3 +321,35 @@ window.addEventListener('scroll', function () {
         navbar.classList.remove('scrolled');
     }
 });
+
+
+/* CV Dropdown Desktop & Mobile */
+document.querySelectorAll('.cv-dropdown').forEach(function (dropdown) {
+    const toggle = dropdown.querySelector('.cv-toggle');
+
+    if (!toggle) return;
+
+    toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        const isOpen = dropdown.classList.toggle('active');
+
+        toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+});
+
+document.addEventListener('click', function (e) {
+    document.querySelectorAll('.cv-dropdown').forEach(function (dropdown) {
+        if (!dropdown.contains(e.target)) {
+            dropdown.classList.remove('active');
+
+            const toggle = dropdown.querySelector('.cv-toggle');
+
+            if (toggle) {
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+        }
+    });
+});
+

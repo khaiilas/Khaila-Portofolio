@@ -1,8 +1,8 @@
 <section class="projects-section" id="projects">
     <div class="section-heading">
-        <p class="section-label">MY WORK</p>
-        <h2>Project Experience</h2>
-        <p class="section-description">
+        <p class="section-label" data-i18n="projects_label">MY WORK</p>
+        <h2 data-i18n="projects_title">Project Experience</h2>
+        <p class="section-description" data-i18n="projects_description">
             A selection of projects that reflect my experience in
             system analysis, software development, and digital solutions.
         </p>
@@ -34,9 +34,9 @@
         </div>
 
             <div class="project-content">
-                <p class="project-category">Web Application | Business Process Analysis</p>
-                <h3>Inventory Management System</h3>
-                <p>
+                <p class="project-category" data-i18n="project1_category">Web Application | Business Process Analysis</p>
+                <h3 data-i18n="project1_title">Inventory Management System</h3>
+                <p data-i18n="project1_description">
                     A web-based inventory management system designed to streamline stock management, 
                     track incoming and outgoing goods, monitor product availability, and generate 
                     inventory reports.
@@ -52,7 +52,7 @@
                     <button type="button" class="project-link"
                         onclick="openProjectDetail('inventory')">
                         <i class="fa fa-eye" aria-hidden="true"></i>
-                        <span>Detail Project</span>
+                        <span data-i18n="project_detail_button">Detail Project</span>
                     </button>
                 </div>
             </div>
@@ -85,25 +85,24 @@
         </div>
 
             <div class="project-content">
-                <p class="project-category">System Analysis | System Document</p>
-                <h3>Software Requirement & System Design</h3>
-                <p>
-                    A software documentation project covering
-                    requirements analysis, system workflows,
-                    UML modeling, database structure, and UI design.
+                <p class="project-category" data-i18n="project2_category">
+                    System Analysis | System Document
                 </p>
-
+                <h3 data-i18n="project2_title">Software Requirement & System Design</h3>
+                <p data-i18n="project2_description">
+                    A software documentation project covering requirements analysis,
+                    system workflows, UML modeling, database structure, and UI design.
+                </p>
                 <div class="project-tags">
                     <span>SRS</span>
                     <span>UML</span>
                     <span>UI/UX</span>
                 </div>
-
                 <div>
                 <button type="button" class="project-link"
                     onclick="openProjectDetail('system-design')">
                     <i class="fa fa-eye" aria-hidden="true"></i>
-                    <span>Detail Project</span>
+                    <span data-i18n="project_detail_button">Detail Project</span>
                 </button>
                 </div>
             </div>
@@ -131,25 +130,24 @@
         </div>
 
             <div class="project-content">
-                <p class="project-category">Web Application</p>
-                <h3>Point of Sale & Stock Forecasting</h3>
-                <p>
-                    An enhancement of an inventory management system
-                    with sales transaction features and stock forecasting
-                    using the Single Exponential Smoothing method.
+                <p class="project-category" data-i18n="project3_category">
+                    Web Application
                 </p>
-
+                <h3 data-i18n="project3_title">Point of Sale & Stock Forecasting</h3>
+                <p data-i18n="project3_description">
+                    An enhancement of an inventory management system with sales transaction
+                    features and stock forecasting using the Single Exponential Smoothing method.
+                </p>
                 <div class="project-tags">
                     <span>PHP</span>
                     <span>MySQL</span>
                     <span>SES</span>
                 </div>
-
                 <div class="project-links">
                     <button type="button" class="project-link"
                         onclick="openProjectDetail('pos-forecasting')">
                         <i class="fa fa-eye" aria-hidden="true"></i>
-                        <span>Detail Project</span>
+                        <span data-i18n="project_detail_button">Detail Project</span>
                     </button>
                 </div>
             </div>

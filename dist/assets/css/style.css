@@ -65,22 +65,51 @@ body {
     color: var(--burgundy);
 }
 
+/* LANGUAGE BUTTON */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.language-switcher button {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--burgundy);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--burgundy);
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.language-switcher button:hover {
+    background: var(--burgundy);
+    color: white;
+}
+
 /* DARK MODE BUTTON */
 .theme-toggle {
     width: 38px;
     height: 38px;
     border-radius: 50%;
-    border: 1px solid var(--border);
-    background: var(--surface);
-    color: var(--dark);
+    border: 1px solid var(--burgundy);
+    background: transparent;
+    color: var(--burgundy);
     cursor: pointer;
     font-size: 15px;
     transition: .3s ease;
 }
 
 .theme-toggle:hover {
-    background: var(--pink);
-    color: var(--burgundy);
+    background: var(--burgundy);
+    color: white;
 }
 
 /* SECTION */
@@ -246,7 +275,7 @@ p {
 
 .hero h1 span {
     display: block;
-    color: #4a4141;
+    color: black;
 }
 
 .hero h2 {
@@ -356,6 +385,8 @@ p {
     overflow: hidden;
     border-radius: 180px 180px 30px 30px;
     background: var(--pink);
+    border: 4px solid var(--burgundy);
+    box-shadow: 0 10px 25px rgba(163, 19, 27, 0.15);
 }
 
 .profile-placeholder img {
@@ -550,8 +581,13 @@ CONTACT STRIP
 }
 
 .intro-description span {
+    color: #6b6060;
+    font-weight: 400;
+}
+
+.intro-description .highlight {
     color: var(--burgundy);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /* =========================
@@ -1326,18 +1362,23 @@ CONTACT STRIP
 }
 
 .location-info {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    gap: 5px;
-    padding: 12px 20px;
+    align-items: flex-start;
+    gap: 7px;
+    width: 100%;
+    max-width: 350px;
+    padding: 14px 22px;
     background: var(--pink);
     border: 1px solid rgba(163, 19, 27, 0.15);
     border-radius: 14px;
+    text-align: left;
 }
 
 .location-label {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 7px;
     color: var(--burgundy);
     font-size: 11px;
@@ -1350,6 +1391,7 @@ CONTACT STRIP
     color: var(--burgundy-dark);
     font-size: 14px;
     font-weight: 600;
+    text-align: left;
 }
 
 .contact-details {
@@ -1646,8 +1688,8 @@ p,
 }
 
 .theme-toggle:hover {
-    background: var(--pink);
-    color: var(--burgundy);
+    background: var(--burgundy);
+    color: white;
 }
 
 .logo,
@@ -1683,7 +1725,7 @@ p,
     display: block;
     width: 22px;
     height: 2px;
-    background: var(--burgundy);
+    background: var(--gray);
     border-radius: 3px;
     transition: .3s ease;
 }
@@ -1717,7 +1759,8 @@ p,
     /* LOGO */
     .logo {
         font-size: 17px;
-        order: 1;
+        order: 2;
+        margin-right: auto;
     }
 
     .logo span {
@@ -1727,8 +1770,9 @@ p,
     /* HAMBURGER */
     .menu-toggle {
         display: flex;
-        order: 2;
-        margin-left: auto;
+        order: 1;
+        margin-left: 0;
+        margin-right: 10px;
     }
 
     /* DARK MODE */
@@ -1781,10 +1825,309 @@ p,
 
     /* DOWNLOAD CV MOBILE */
     .nav-menu .mobile-cv {
-        display: inline-flex !important;
-        width: fit-content;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        width: 100%;
         margin: 12px 0 5px;
-        padding: 10px 20px;
+        padding: 0;
+        position: relative;
     }
 }
 
+.skills-section .skills-heading h2 span:first-child {
+    color: var(--burgundy);
+}
+
+.skills-section .skills-heading h2 span:last-child {
+    color: black;
+}
+
+.intro-description p span {
+    color: #8b7777;
+    font-weight: 400;
+}
+
+.intro-description p span.highlight {
+    color: var(--burgundy);
+    font-weight: 700;
+}
+
+.contact-heading h2 span.contact-title-highlight {
+    color: #a3131b !important;
+}
+
+.section-heading h2 span.cert-title-highlight {
+    color: #a3131b !important;
+}
+
+/* DARK MODE - HERO */
+[data-theme="dark"] .hero {
+    background:
+        radial-gradient(
+            circle at 85% 15%,
+            rgba(197, 43, 64, 0.20),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #191517 0%,
+            #251b20 55%,
+            #38242b 100%
+        );
+}
+
+/* SOCIAL NETWORKS */
+
+.social-networks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.social-label {
+    color: var(--gray);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 18px;
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    background: var(--surface);
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+.social-link > i:first-child {
+    color: var(--burgundy);
+    font-size: 18px;
+}
+
+.social-link .external-icon {
+    font-size: 10px;
+    color: var(--gray);
+}
+
+.social-link:hover {
+    border-color: var(--burgundy);
+    color: var(--burgundy);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+
+    .desktop-cv {
+        display: none !important;
+    }
+
+    .mobile-cv {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        width: 100%;
+        margin-top: 10px;
+        position: relative;
+    }
+
+    /* Tombol Download CV */
+    .mobile-cv .cv-toggle {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 15px;
+        box-sizing: border-box;
+    }
+
+    /* Dropdown di bawah tombol */
+    .mobile-cv .cv-menu {
+        display: none;
+        position: static !important;
+        width: 100%;
+        min-width: 100%;
+        margin-top: 8px;
+        padding: 7px;
+        box-sizing: border-box;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    }
+
+    .mobile-cv.active .cv-menu {
+        display: block !important;
+    }
+
+    /* Pilihan CV tersusun ke bawah */
+    .mobile-cv .cv-menu a {
+        display: flex !important;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 12px;
+        box-sizing: border-box;
+        color: var(--dark);
+        text-decoration: none;
+        font-size: 13px;
+    }
+
+    /* Ikon burgundy */
+    .mobile-cv i {
+        color: var(--burgundy) !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .nav-menu .mobile-cv {
+        width: 100%;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        padding: 0;
+    }
+
+    .mobile-cv .cv-toggle {
+        width: 100%;
+        min-height: 52px;
+        padding: 14px 20px !important;
+        border: 1.5px solid var(--burgundy) !important;
+        border-radius: 35px !important;
+        background: transparent;
+        color: var(--burgundy);
+        font-size: 14px;
+    }
+
+    .mobile-cv .cv-menu {
+        width: 100%;
+        margin-top: 10px;
+        padding: 8px;
+        border: 1.5px solid var(--burgundy) !important;
+        border-radius: 18px !important;
+        background: var(--surface);
+    }
+
+    .mobile-cv .cv-menu a {
+        min-height: 48px;
+        padding: 13px 16px !important;
+        border-radius: 25px;
+        font-size: 14px !important;
+    }
+
+    .mobile-cv .cv-toggle i,
+    .mobile-cv .cv-menu a i {
+        color: var(--burgundy) !important;
+        font-size: 16px;
+    }
+}
+
+/* =========================
+   DESKTOP DOWNLOAD CV
+========================= */
+
+@media (min-width: 769px) {
+
+    .nav-actions {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 12px;
+        flex-shrink: 0;
+    }
+
+    .desktop-cv {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 0;
+    }
+
+    .desktop-cv .cv-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        min-height: 38px;
+        padding: 9px 17px;
+        border: 1.5px solid var(--burgundy);
+        border-radius: 30px;
+        background: transparent;
+        color: var(--burgundy);
+        font-family: inherit;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: .3s ease;
+    }
+
+    .desktop-cv .cv-toggle:hover {
+        background: var(--burgundy);
+        color: white;
+    }
+
+    .desktop-cv .cv-menu {
+        display: none;
+        position: absolute;
+        top: calc(100% + 10px);
+        right: 0;
+        z-index: 200;
+        width: 210px;
+        padding: 8px;
+        background: var(--surface);
+        border: 1px solid var(--burgundy);
+        border-radius: 14px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, .12);
+    }
+
+    .desktop-cv.active .cv-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desktop-cv .cv-menu a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        padding: 11px 12px;
+        border-radius: 9px;
+        color: var(--dark);
+        font-size: 12px;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: .2s ease;
+    }
+
+    .desktop-cv .cv-menu a:hover {
+        background: var(--pink);
+        color: var(--burgundy);
+    }
+
+    .desktop-cv .cv-toggle i,
+    .desktop-cv .cv-menu a i {
+        color: var(--burgundy);
+    }
+
+    .desktop-cv .cv-toggle:hover i {
+        color: white;
+    }
+}
